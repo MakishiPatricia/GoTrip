@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ************************** HEADER ***********************/
+.header {
+    background-color: #26215C;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.nav .lista {
+    display: flex;
+    gap: 30px;
+}
+
+.nav .lista a {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.nav .lista a:hover {
+    color: #D4537E;
+}
+
+/* ************************** HERO ***********************/
+.hero {
+    background-image: url('../imagens/casalPorDoSol.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 90px;
+    
+}
+
+.titulo_hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+
+.sinta {
+    font-size: 28px;
+    color: #FBEAF0;
+}
+
+.explore {
+    font-size: 40px;
+    margin-left: 40px;
+    color: #FFFFFF;
+}
+
+.viva {
+    font-size: 60px;
+    color: #D4537E;
+}
+
+.formulario {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content:center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+}
+
+.campo label {
+    font-size: 13px;
+    color: #26215C ;
+}
+
+.campo input,
+.campo select {
+    border: none;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 5px;
+}
+
+.botao {
+    background-color: #D4537E;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: #B83F66;
+}
+
+/* ************************** PASSEIOS ***********************/
+.passeios {
+    padding: 60px 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.passeios_texto {
+    flex: 1;
+}
+
+.passeios_texto h2 {
+    font-size: 28px;
+    color: #26215C;
+    margin-bottom: 15px;
+}
+
+.passeios_texto p {
+    color: #26215C ;
+    margin-bottom: 20px;
+}
+
+.saiba_mais {
+    background-color: #D4537E;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+
+.saiba_mais:hover {
+    background-color: #B83F66;
+}
+
+.passeios_imagens {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.passeios_imagens img {
+    width: 48%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* ************************** DESTINOS ***********************/
+.destinos {
+    background-color: #FBEAF0;
+    padding: 60px 20px;
+}
+
+.titulo_destino {
+    text-align: center;
+    font-size: 28px;
+    color: #26215C;
+    margin-bottom: 40px;
+}
+
+.opcoes_destinos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.card_corpo {
+    padding: 15px;
+}
+
+.card_corpo h3 {
+    color: #26215C;
+    margin-bottom: 5px;
+}
+
+.card_corpo p {
+    font-size: 13px;
+    color: #26215C ;
+    margin-bottom: 15px;
+}
+
+.card_rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card_preco {
+    color: #26215C ;
+    font-weight: bold;
+}
+
+.botao_destino {
+    background-color: #D4537E;
+    color: #FFFFFF;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.botao_destino:hover {
+    background-color: #B83F66;
+}
+
+/* ************************** AVALIAÇÕES ***********************/
+.avaliacoes {
+    background-color: #FBEAF0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.titulo_cavaliacoes {
+    font-size: 28px;
+    color: #26215C;
+    margin-bottom: 30px;
+}
+
+.depoimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.seta_esquerda,
+.seta_direita {
+    background-color: #7F77DD;
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+}
+
+.seta_esquerda:hover,
+.seta_direita:hover {
+    background-color: #26215C;
+}
+
+.depoimento_texto {
+    font-style: italic;
+    color: #5F5E5A;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.depoimento_foto {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.depoimento_autor {
+    color: #26215C;
+    font-weight: bold;
+}
+
+/* ************************** RODAPÉ ***********************/
+.footer {
+    background-color: #26215C;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer_marca {
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.redes_sociais {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.div_redes_sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.div_redes_sociais a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #7F77DD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_redes_sociais img {
+    width: 20px;
+}
+
+.facebook_icone:hover {
+    background-color: #1877F2;
+}
+
+.instagran:hover {
+    background-color: #E4405F;
+}
+
+.x:hover {
+    background-color: #000000;
+}
+
+.copy {
+    color: #B4B2A9;
+    font-size: 13px;
+}
+
+/* ===================== RESPONSIVIDADE ===================== */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .passeios {
+        flex-direction: column;
+    }
+
+    .titulo_hero .explore {
+        margin-left: 10px;
+    }
+
+    .depoimento {
+        flex-direction: column;
+    }
+}

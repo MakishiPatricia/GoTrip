@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoTrip</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+
+<body>
+
+    <!------------------------------------------ Header ------------------------------------->
+    <header class="header">
+
+        <a href="#" class="logo">Gotrip</a>
+
+        <nav class="nav">
+            <ul class="lista">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#passeios">Passeios</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+
+            <!------------------------------------------ Frase do Banner ------------------------------------->
+
+            <h1 class="titulo_hero">
+                <span class="sinta">Sinta.</span>
+                <span class="explore">Explore.</span>
+                <span class="viva">Viva.</span>
+            </h1>
+
+            <!------------------------------------------ Espaço do Formulário ------------------------------------->
+
+            <form class="formulario" action="" method="post" onsubmit="validarInfor(event)">
+
+                <div class="campo">
+                    <label for="origem">Origem</label>
+                    <input type="text" id="origem" name="origem" placeholder="De onde você parte">
+                </div>
+
+                <div class="campo">
+                    <label for="destino">Destino</label>
+                    <input type="text" id="destino" name="destino" placeholder="Para onde você quer ir">
+                </div>
+
+                <div class="campo">
+                    <label for="ida">Data Ida</label>
+                    <input type="date" id="ida" name="ida">
+                </div>
+
+                <div class="campo">
+                    <label for="volta">Data Volta</label>
+                    <input type="date" id="volta" name="volta">
+                </div>
+
+                <div class="campo">
+                    <label for="passageiros">Passageiros</label>
+                    <select id="passageiros" name="passageiros">
+                        <option value="1">1 Passageiro</option>
+                        <option value="2">2 Passageiros</option>
+                        <option value="3">3 Passageiros</option>
+                        <option value="4">4 Passageiros</option>
+
+                    </select>
+                </div>
+
+                <button type="submit" class="botao">Buscar</button>
+
+            </form>
+
+
+
+        </section>
+
+        <!------------------------------------------ Passeios ------------------------------------->
+
+        <section class="passeios" id="passeios">
+            <div class="passeios_texto">
+                <h2>Próximos passeios e destinos</h2>
+                <p>
+                    Viajar é expandir horizontes, conhecer novas culturas e colecionar momentos
+                    que duram para sempre. Criamos a GoTrip para ser a sua ponte para o
+                    inesperado, facilitando a busca pela sua próxima aventura de forma
+                    totalmente simples, rápida e segura. Permita-se ir além dos roteiros
+                    tradicionais, sinta a liberdade de explorar novos caminhos e viva a sua
+                    jornada com total tranquilidade.
+                </p>
+                <a href="#destinos" class="saiba_mais">Saiba Mais</a>
+            </div>
+
+            <div class="passeios_imagens">
+                <img src="./imagens/familia.jpg" alt="Uma familia viajando juntos em uma praia">
+                <img src="./imagens/casalChina.jpg" alt="Casal observando a paisagem">
+                <img src="./imagens/mulherPraia.jpg" alt="Mulher em praia paradisíaca">
+                <img src="./imagens/fotografo.jpg" alt="Viajante fotografando vista do mar">
+            </div>
+        </section>
+
+        <!------------------------------------------ Destino ------------------------------------->
+
+        <section class="destinos" id="destinos">
+
+            <h2 class="titulo_destino">Escolha seu destino!</h2>
+
+            <div class="opcoes_destinos">
+
+                <!------------------------------------------ Tailandia ------------------------------------->
+
+                <article class="card">
+
+                    <img src="./imagens/tailandia.jpg" alt="Estátua de Buda em Bangkok, Tailândia">
+                    <div class="card_corpo">
+                        <h3>Bangkok, Tailândia</h3>
+                        <p>Templos, cultura e sabores únicos do Oriente</p>
+                        <div class="card_rodape">
+                            <span class="card_preco">R$ 3.500,00</span>
+                            <a href="#" class="botao_destino">Saiba mais</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!------------------------------------------ México ------------------------------------->
+
+                <article class="card">
+                    <img src="./imagens/Cancun.jpg" alt="Praia paradisíaca de Cancún, México">
+                    <div class="card_corpo">
+                        <h3>Cancún, México</h3>
+                        <p>Praias de água cristalina e sol o ano todo</p>
+                        <div class="card_rodape">
+                            <span class="card_preco">R$ 2.800,00</span>
+                            <a href="#" class="botao_destino">Saiba mais</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!------------------------------------------ Fernando de Noronha ------------------------------------->
+
+                <article class="card">
+                    <img src="./imagens/Fernando.jpg"
+                        alt="Vista panorâmica do Morro do Pico e mar azul em Fernando de Noronha.">
+                    <div class="card_corpo">
+                        <h3>Fernando de Noronha</h3>
+                        <p>O paráso brasileiro de águas mais azuis do mundo</p>
+                        <div class="card_rodape">
+                            <span class="card_preco">R$ 2.100,00</span>
+                            <a href="#" class="botao_destino">Saiba mais</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!------------------------------------------ Itália ------------------------------------->
+
+                <article class="card">
+                    <img src="./imagens/Italia.jpg" alt="Antigas ruínas do Coliseu em Roma na Itália.">
+                    <div class="card_corpo">
+                        <h3>Roma, Itália</h3>
+                        <p>História, arte e a melhor pizza do mundo</p>
+                        <div class="card_rodape">
+                            <span class="card_preco">R$ 3.800,00</span>
+                            <a href="#" class="botao_destino">Saiba mais</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!------------------------------------------  Espanha  ------------------------------------->
+
+                <article class="card">
+                    <img src="./imagens/barcelona.jpg"
+                        alt="A arquitetura modernista enfeitando o céu nas ruas de Barcelona.">
+                    <div class="card_corpo">
+                        <h3>Barcelona, Espanha</h3>
+                        <p>Arte, arquitetura e a vibrante mediterrânea</p>
+                        <div class="card_rodape">
+                            <span class="card_preco">R$ 3.200,00</span>
+                            <a href="#" class="botao_destino">Saiba mais</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!------------------------------------------ China ------------------------------------->
+
+                <article class="card">
+                    <img src="./imagens/china.jpg"
+                        alt="A arquitetura modernista enfeitando o céu nas ruas de Barcelona.">
+                    <div class="card_corpo">
+                        <h3>Xian, China</h3>
+                        <p>Maravilhas milenares que desafiam o tempo e a imaginação</p>
+                        <div class="card_rodape">
+                            <span class="card_preco">R$ 5.800,00</span>
+                            <a href="#" class="botao_destino">Saiba mais</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!------------------------------------------ Avaliações ------------------------------------->
+
+
+        <section class="avaliacoes" id="avaliacoes">
+
+            <h2 class="titulo_cavaliacoes">O que dizem nossos viajantes</h2>
+
+            <div class="depoimento">
+                <button class="seta_esquerda">‹</button>
+
+                <div class="depoimento_conteudo">
+
+                    <p class="depoimento_texto">
+                        "Viajar com a GoTrip foi a melhor decisão que tomei este ano. Encontrei
+                        tudo o que precisava em um só lugar, com preços justos e um atendimento
+                        que fez toda a diferença."
+                    </p>
+
+                    <img src="./imagens/turmaSelf.jpg" alt="Camila Andrade sorrindo ao lado de amigos"
+                        class="depoimento_foto">
+                    <p class="depoimento_autor">Camila Andrade, Designer</p>
+                </div>
+
+                <button class="seta_direita">›</button>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <!------------------------------------------ Rodapé ------------------------------------->
+
+    <footer class="footer">
+
+        <p class="footer_marca">GoTrip — Sua próxima aventura começa aqui.</p>
+
+        <p class="redes_sociais">Siga-nos</p>
+        <div class="div_redes_sociais">
+            <a href="#" class="facebook_icone">
+                <img src="./imagens/facebook.png" alt="facebook">
+            </a>
+            <a href="#" class="instagran">
+                <img src="./imagens/instagram.png" alt="instagran">
+            </a>
+            <a href="#" class="x">
+                <img src="./imagens/twitter.png" alt="Twitter">
+            </a>
+
+        </div>
+
+        <p class="copy">&copy; 2026 GoTrip. Todos os direitos reservados.</p>
+
+
+
+
+    </footer>
+
+<script src="./js/script.js"></script>
+</body>
+
+</html>
